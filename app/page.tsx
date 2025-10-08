@@ -32,9 +32,9 @@ export default function Home() {
     <div className="min-h-screen">
       <Navbar />
       <ClassicHero />
+      <Gallery />
       <About />
       <Services />
-      <Gallery />
       <Contact />
       <Footer />
     </div>
