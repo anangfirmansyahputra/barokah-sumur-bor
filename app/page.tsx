@@ -7,14 +7,16 @@ import Navbar from "@/components/navbar";
 import Services from "@/components/services";
 
 export const metadata = {
-  title: "Jasa Sumur Bor Profesional | Anang Water Tech",
+  title: "Jasa Sumur Bor Profesional | Barokah Sumur Bor Bali",
   description:
-    "Jasa pembuatan sumur bor terpercaya di Indonesia. Proyek dijamin rapi, cepat, dan berkualitas.",
+    "Jasa pembuatan sumur bor terpercaya di Bali. Proyek dijamin rapi, cepat, dan berkualitas.",
   keywords: [
     "sumur bor",
     "jasa pengeboran air",
     "proyek air bersih",
     "bor air",
+    "sumur bor bali",
+    "villa sumur bor",
   ],
   openGraph: {
     title: "Jasa Sumur Bor Profesional",
