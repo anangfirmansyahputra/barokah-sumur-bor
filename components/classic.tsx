@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import { ArrowRight, CheckCircle, Phone } from 'lucide-react';
+import { ArrowRight, CheckCircle, Phone } from "lucide-react";
 
 export default function ClassicHero() {
   const scrollToContact = () => {
-    const element = document.getElementById('contact');
+    const element = document.getElementById("contact");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const scrollToServices = () => {
-    const element = document.getElementById('services');
-    if (element) element.scrollIntoView({ behavior: 'smooth' });
+    const element = document.getElementById("services");
+    if (element) element.scrollIntoView({ behavior: "smooth" });
   };
-  
+
   return (
     <section id="home" className="relative pt-16">
       <div className="relative bg-blue-600 text-white py-20 lg:py-32">
@@ -26,7 +26,7 @@ export default function ClassicHero() {
             className="w-full h-full object-cover object-top"
           />
         </div>
-        
+
         {/* Content */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -37,17 +37,20 @@ export default function ClassicHero() {
               Melayani Seluruh Wilayah Bali
             </h2>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Pengalaman Lebih Dari 15 Tahun - Teknologi Modern - Tim Berpengalaman
+              Pengalaman Lebih Dari 15 Tahun - Teknologi Modern - Tim
+              Berpengalaman
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <button
-                onClick={scrollToContact}
+              <a
+                href="https://wa.me/6285738783805"
+                target="_blank"
+                // onClick={scrollToContact}
                 className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-10 py-4 rounded text-xl font-bold transition-colors duration-200 flex items-center justify-center gap-2"
               >
                 <Phone className="w-6 h-6" />
                 HUBUNGI KAMI
-              </button>
+              </a>
               <button
                 onClick={scrollToServices}
                 className="bg-white hover:bg-gray-100 text-blue-600 px-10 py-4 rounded text-xl font-bold transition-colors duration-200"
@@ -76,30 +79,46 @@ export default function ClassicHero() {
           </div>
         </div>
       </div>
-      
+
       {/* Stats Bar */}
       <div className="bg-gray-100 py-8 border-t-4 border-yellow-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">15+</div>
-              <div className="text-gray-700 font-semibold text-lg">TAHUN PENGALAMAN</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
+                15+
+              </div>
+              <div className="text-gray-700 font-semibold text-lg">
+                TAHUN PENGALAMAN
+              </div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">500+</div>
-              <div className="text-gray-700 font-semibold text-lg">PROYEK SELESAI</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
+                500+
+              </div>
+              <div className="text-gray-700 font-semibold text-lg">
+                PROYEK SELESAI
+              </div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">100%</div>
-              <div className="text-gray-700 font-semibold text-lg">KEPUASAN KLIEN</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
+                100%
+              </div>
+              <div className="text-gray-700 font-semibold text-lg">
+                KEPUASAN KLIEN
+              </div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">24/7</div>
-              <div className="text-gray-700 font-semibold text-lg">SIAP MELAYANI</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
+                24/7
+              </div>
+              <div className="text-gray-700 font-semibold text-lg">
+                SIAP MELAYANI
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, X, Droplets } from "lucide-react";
+import { Menu, X, Droplets, Phone } from "lucide-react";
 import { useState } from "react";
 
 export default function Navbar() {
